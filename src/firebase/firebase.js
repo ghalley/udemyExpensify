@@ -17,11 +17,13 @@ database.ref().set({
   }
 });
 
-database.ref('age').set(37);
+// database.ref('isSingle')
+//   .remove()
+//   .then(() => {
+//     console.log('Data removed');
+//   })
+//   .catch((e) => {
+//     console.log('Data not removed', e);
+//   });
 
-database.ref('location/city').set('New York');
-
-database.ref('attributes').set({
-  height: 73,
-  weight: 185
-})
+database.ref('isSingle').set(null);
