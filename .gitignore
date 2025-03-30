@@ -2,3 +2,4 @@
 public/dist/
 # Local Netlify folder
 .netlify
+.env.*
