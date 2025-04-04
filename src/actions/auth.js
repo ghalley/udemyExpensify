@@ -9,3 +9,13 @@ export const startLogin = () => {
     });
   }
 };
+
+export const startLogout = () => {
+  return () => {
+    return firebase.auth().signOut().then(() => {
+      console.log("Logged out successfully");
+    }).catch((error) => {
+      console.error("Error during logout:", error);
+    });
+  }
+};
